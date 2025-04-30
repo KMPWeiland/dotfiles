@@ -1,0 +1,44 @@
+[init]
+  templatedir = ~/.git_template
+  defaultBranch = main
+[push]
+  default = current
+  autoSetupRemote = true
+[color]
+  ui = auto
+[alias]
+  lg = log --graph --date=relative --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ad)%Creset'
+  co = checkout
+  cm = commit -m
+  cleanup = !git branch --merged | grep  -v '\\*\\|master\\|develop' | xargs -n 1 git branch -d
+[core]
+  excludesfile = ~/.gitignore
+	editor = windsurf
+  autocrlf = input
+  whitespace = -trailing-space
+[merge]
+  ff = only
+[commit]
+  template = ~/.gitmessage
+[fetch]
+  prune = true
+[rebase]
+  autosquash = true
+[include]
+  path = ~/.gitconfig.local
+[diff]
+  renames = true
+  colorMoved = zebra
+  mnemonicprefix = true
+[user]
+  name = Nick Weiland
+  email = nickweiland@gmail.com
+  username = weilandia
+[log]
+  abbrevCommit = true
+  follow = true
+[credential]
+	helper =
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true

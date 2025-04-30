@@ -1,0 +1,9 @@
+command_timeout = 1000
+[git_status]
+disabled = true
+[aws]
+disabled = true
+[nodejs]
+format = '[$symbol($version )]($style)'
+[ruby]
+format = '[$symbol($version )]($style)'
