@@ -12,4 +12,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Added by Windsurf
-export PATH="/Users/weilandia/.codeium/windsurf/bin:$PATH"
+export PATH="/Users/kristinweiland/.codeium/windsurf/bin:$PATH"
+
+# Added by Windsurf
+export PATH="/Users/kristinweiland/.codeium/windsurf/bin:$PATH"
